@@ -20,14 +20,22 @@ class Second extends React.Component {
   };
 
   handleIncrement = () => {
-      if(this.state.lim > this.state.counter){
+      if(this.state.counter + this.state.step < this.state.lim){
         this.setState({
             counter: this.state.counter + this.state.step ,
           });
       } else{
           alert('Can not exceed the limit.');
       }
-  };
+};
+
+    // handleIncrement = ()=>{
+
+    //     this.setState({
+    //         counter: this.state.counter + this.state.step > this.state.lim ? this.state.counter : this.state.counter + this.state.step,
+    //     })
+    // };
+
 
   handleDecrement = () => {
     this.setState({
