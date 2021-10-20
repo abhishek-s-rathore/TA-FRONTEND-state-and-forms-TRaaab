@@ -21,7 +21,7 @@ class Question extends React.Component{
    render(){
         console.log(this.props, "hello")
        return(
-           <>
+           <>/
            <article className="question">
                <div className={ this.state.active != this.props.question  ? 'questionbox' : 'questionbox  active'}>
                <h1>{this.props.ques.Q}</h1> 
