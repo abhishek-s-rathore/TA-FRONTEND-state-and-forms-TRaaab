@@ -67,3 +67,6 @@ span:hover{
     border-top-right-radius: .5rem;
 }
 
+.disable{
+    display:none;
+}
