@@ -15,15 +15,13 @@ class Questions extends React.Component{
     render(){
        return(
            <>
-             <h2>AltCampus FAQs</h2>
+            <h2>AltCampus FAQs</h2>
             {
                 data.questions.map((ques, index) => {
-                 return <>
+                return <>
                 <Question key={ques.id}  ques={ques} index={index} {...this.state} setQuestion = {(response)=>this.setQuestion(response)} />
-                  </>
+                </>
                 }
-                    
-                 
                 )
             }
            </>
