@@ -5,13 +5,18 @@ import React from "react";
 class Questions extends React.Component{
     constructor(props){
         super(props);
+
         this.state={
-            question:null
+            activeQues:null
         }
     }
+
     setQuestion = (response) =>{
-        this.setState({question:response})
+        this.setState({
+            activeQues: this.state.activeQues === response ? null : response,
+        });
     }
+
     render(){
        return(
            <>
@@ -19,7 +24,7 @@ class Questions extends React.Component{
             {
                 data.questions.map((ques, index) => {
                 return <>
-                <Question key={ques.id}  ques={ques} index={index} {...this.state} setQuestion = {(response)=>this.setQuestion(response)} />
+                <Question key={ques.id}  ques={ques} {...this.state} setQuestion={(response)=>this.setQuestion(response)} />
                 </>
                 }
                 )
