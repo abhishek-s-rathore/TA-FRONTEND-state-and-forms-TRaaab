@@ -6,7 +6,7 @@ class Second extends React.Component {
     this.state = {
       counter: 0,
       step: 1,
-      active: 1,
+      active1: 1,
       lim: Infinity,
       active2 : Infinity,
     };
@@ -15,12 +15,12 @@ class Second extends React.Component {
   handleStep = (num) => {
     this.setState({
       step: num,
-      active: num,
+      active1: num,
     });
   };
 
   handleIncrement = () => {
-      if(this.state.counter + this.state.step < this.state.lim){
+      if(this.state.counter + this.state.step <= this.state.lim){
         this.setState({
             counter: this.state.counter + this.state.step ,
           });
@@ -28,14 +28,6 @@ class Second extends React.Component {
           alert('Can not exceed the limit.');
       }
 };
-
-    // handleIncrement = ()=>{
-
-    //     this.setState({
-    //         counter: this.state.counter + this.state.step > this.state.lim ? this.state.counter : this.state.counter + this.state.step,
-    //     })
-    // };
-
 
   handleDecrement = () => {
     this.setState({
@@ -47,8 +39,9 @@ class Second extends React.Component {
     this.setState({
       counter: 0,
       step: 1,
-      active: 1,
+      active1: 1,
       lim: Infinity,
+      active2: Infinity,
     });
   };
 
@@ -63,7 +56,6 @@ class Second extends React.Component {
     return (
       <section>
         <h1>{this.state.counter}</h1>
-
         <div className="flex">
           <div>
             '<h3>Steps</h3>
@@ -72,7 +64,7 @@ class Second extends React.Component {
                 onClick={() => {
                   this.handleStep(2);
                 }}
-                className={this.state.active === 2 ? "steps active" : "steps"}
+                className={this.state.active1 === 2 ? "steps active" : "steps"}
               >
                 2
               </button>
@@ -80,7 +72,7 @@ class Second extends React.Component {
                 onClick={() => {
                   this.handleStep(5);
                 }}
-                className={this.state.active === 5 ? "steps active" : "steps"}
+                className={this.state.active1 === 5 ? "steps active" : "steps"}
               >
                 5
               </button>
@@ -88,7 +80,7 @@ class Second extends React.Component {
                 onClick={() => {
                   this.handleStep(10);
                 }}
-                className={this.state.active === 10 ? "steps active" : "steps"}
+                className={this.state.active1 === 10 ? "steps active" : "steps"}
               >
                 10
               </button>
