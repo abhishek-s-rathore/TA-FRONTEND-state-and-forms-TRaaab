@@ -1,0 +1,120 @@
+@import url('./reset.css');
+@import url('./flex.css');
+
+/* Custom Styles */
+
+body{
+    background-color: rgb(30,30,30);
+    color: white;
+}
+
+/* Header */
+
+.container{
+    max-width: 1550px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header{
+  border: 1px solid #fff;
+margin: 1rem auto;
+  font-size: 0;
+  border-radius: 2rem;
+}
+
+.header input{
+        background-color: rgb(30,30,30);
+        border: none;
+        outline: none;
+        color: white;
+        margin-left: 1rem;
+}
+
+.search, .size, .sentence{
+  border-right: 1px solid white;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.search{
+    flex: 0 1 20%;
+}
+
+.search input{
+     width: 87%;
+}
+
+.sentence{
+    flex: 0 1 44%;
+}
+
+.sentence input{
+    width: 87%;
+}
+
+.size{
+    flex: 0 1 26%;
+}
+
+.size input{
+    width: 85%;
+    color: rgb(138,180,248);
+}
+
+
+.reset{
+    font-size: 1rem;
+    flex: 0 1 4%;
+}
+
+.article{
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: .5rem;
+    flex: 0 1 22.2%;
+    margin-top: .5rem;
+    margin-right: .5rem;
+}
+
+.article h3{
+   font-weight: 600;
+   font-size: 1.1rem;
+   padding-bottom: .4rem;
+}
+.article cite{
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: .4rem;
+}
+
+.article span{
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.article p{
+    padding-bottom: .5rem;
+    height: 10rem;
+    margin-top: 1.8rem;
+    font-size: 2rem;
+    overflow: auto;
+}
+
+.article p::-webkit-scrollbar{
+    display: none;
+}
+
+.box{
+    padding-left: 2rem;
+}
+
+.reset:hover{
+    cursor: pointer;
+}
+
+.article:hover{
+    cursor: pointer;
+    background-color: rgb(45,45,45);
+}
