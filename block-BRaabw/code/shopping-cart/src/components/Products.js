@@ -19,11 +19,11 @@ class Products extends React.Component{
         var sortedProducts = [...products];
         
         if(selectedSizes.length > 0){
-           sortedProducts = sortedProducts.filter((p)=>{
+            sortedProducts = sortedProducts.filter((p)=>{
                 for(let sz of selectedSizes){
                     if(p.availableSizes.includes(sz)){
                         return true;
-                      
+                        
                     }
                 }
             });
