@@ -6,7 +6,7 @@ import Filters from "./Filters";
 import {products} from "../data/data.json";
 
 class Shop extends React.Component {
-  constructor(props) {
+  constructor(props) { 
     super(props);
     this.state = {
       cartToggle: false,
@@ -75,9 +75,9 @@ let isPresent = this.state.cartItems.findIndex(p=> p.id === prod.id) !== -1;
        })
       }));
   }
+  
 
   decrementQuantity = (id)=>{
-  
     this.setState((prevState)=>({
         cartItems: prevState.cartItems.map(p=>{
          if(p.id === id && p.quantity > 1 ){
