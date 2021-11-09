@@ -1,0 +1,74 @@
+@import url('./reset.css');
+@import url('./flex.css');
+
+/* Custom Styles */
+
+form{
+    max-width:  500px;
+    width: 100%;
+    padding: 1rem;
+    margin:  2rem auto;
+    border: 2px solid mediumpurple;
+    border-radius: .4rem;
+    text-align: center;
+}
+
+form input{
+    width: 98.5%;
+    margin-bottom: 1rem;
+}
+
+form label{
+    display: inline-block;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: mediumpurple;
+    margin-bottom: .5rem;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: rgb(130, 85, 215);
+}
+
+h3{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: rgb(130, 85, 215);
+    font-weight: 600;
+}
+
+textarea{
+    width: 100%;
+
+}
+
+input[type='checkbox']{
+    width: 20px;
+}
+
+div{
+    margin-top: 1rem;
+    text-align: start;
+}
+
+button{
+    margin: 1rem;
+}
+
+form{
+    position: relative;
+}
+
+.btna{
+position: absolute;
+bottom: -.5rem;
+left: 47%;
+transform: translate(-50%);
+}
+
